@@ -1,46 +1,117 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Motor Insurance Quotation Application
+
+This is a web application for obtaining motor insurance quotations, built with React, TypeScript, and Tailwind CSS. It provides a complete, professional workflow for users to get a quote, review coverage, pay, and receive instant confirmation.
+
+## Overview
+
+This project implements a full motor insurance quotation and purchase flow, including:
+
+- Multi-step quote form with validation
+- Live price preview and VAT breakdown
+- Professional PDF quote generation
+- Payment integration (Mobile Money, Credit Cards)
+- Automated receipt generation
+- Instant policy activation
+- Responsive, accessible design
+
+## User Journey
+
+1. Enter vehicle information (make, model, year, value)
+2. Provide personal details and select usage type
+3. Choose a coverage plan (Basic, Standard, Premium)
+4. View a live quote with VAT and pricing details
+5. Download a professional PDF quote
+6. Complete payment securely
+7. Receive instant confirmation and policy activation
+
+## Getting Started
+
+
+### Prerequisites
+
+- Node.js 16 or higher
+- npm or yarn
+
+### Installation
+
+```bash
+git clone https://github.com/dvbwitso/motor-insurance-quote-challenge.git
+cd motor-insurance-quote
+npm install
+npm start
+```
+
+The application will be available at http://localhost:3000
+
+
+## Technology Stack
+
+- Frontend: React 18, TypeScript
+- Styling: Tailwind CSS, custom components
+- Animations: Framer Motion
+- Icons: Lucide React
+- PDF Generation: jsPDF
+- Form Handling: React Hook Form
+- Routing: React Router
+- UUID: Unique ID generation for receipts and policies
+
+
+## Project Structure
+
+```
+src/
+  components/      # Reusable UI components
+  pages/           # Main application pages
+  services/        # API and business logic
+  types/           # TypeScript type definitions
+  utils/           # Utility functions
+```
+
+
+## Implementation Details
+
+### Pricing Engine
+- Calculates insurance rates based on Zambian market (1.5% - 4.5% of vehicle value)
+- Adjusts for vehicle age and usage type (personal, business, commercial)
+- Applies 16% VAT
+
+### PDF Quote Generation
+- Generates a single-page, print-friendly PDF
+- Includes company branding, VAT breakdown, and terms
+
+### Payment Integration
+- Supports Airtel Money, MTN Mobile Money, Zamtel Kwacha, and credit cards
+- Secure checkout flow
+- Generates receipts with unique tracking IDs
+
+
+## Design Philosophy
+
+- Professional, business-appropriate interface
+- Intuitive, user-friendly flow
+- Mobile-first, responsive design
+- Optimized for performance
+- Accessibility compliant (WCAG)
+
 
 ## Available Scripts
 
 In the project directory, you can run:
 
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Runs the app in development mode at http://localhost:3000. The page reloads on edits and displays lint errors in the console.
 
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in interactive watch mode.
 
 ### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Builds the app for production to the `build` folder. The build is minified and filenames include hashes.
 
 ### `npm run eject`
+Removes the single build dependency and copies configuration files and dependencies into your project. This is a one-way operation.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+For more details, see the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started) and the [React documentation](https://reactjs.org/).
