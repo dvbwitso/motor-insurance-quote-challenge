@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Motor Insurance",
+  "name": "Hobbiton Motor Insurance Quote",
+  "description": "Get instant motor insurance quotes in Zambia with Hobbiton Investment",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,11 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#DC2626",
+  "background_color": "#ffffff",
+  "categories": ["finance", "insurance", "business"],
+  "lang": "en-ZM",
+  "scope": "/",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false
 }
